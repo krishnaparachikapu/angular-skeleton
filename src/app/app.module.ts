@@ -21,7 +21,7 @@ import { HomeComponent } from './components/home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'ANGULAR-SKELETON'}),
     AppRoutingModule,
     StoreModule.forRoot(reducers, { initialState: loadInitialStoreState }),
   ],
